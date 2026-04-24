@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-label="Trucking illustration">
+  <defs>
+    <linearGradient id="b" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#226e8c"/>
+      <stop offset="1" stop-color="#2a8aad"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e86738"/>
+      <stop offset="1" stop-color="#f08a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" rx="36" fill="rgba(232,103,56,0.06)"/>
+  <g transform="translate(150 160)">
+    <rect x="0" y="170" width="420" height="170" rx="28" fill="rgba(34,110,140,0.10)" stroke="rgba(34,110,140,0.22)" stroke-width="3"/>
+    <rect x="350" y="90" width="250" height="250" rx="34" fill="rgba(34,110,140,0.12)" stroke="rgba(34,110,140,0.22)" stroke-width="3"/>
+    <rect x="405" y="140" width="140" height="84" rx="16" fill="rgba(0,0,0,0.10)"/>
+    <path d="M50 250 H290" stroke="url(#a)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="120" cy="360" r="46" fill="rgba(0,0,0,0.14)"/>
+    <circle cx="120" cy="360" r="20" fill="rgba(255,255,255,0.55)"/>
+    <circle cx="500" cy="360" r="46" fill="rgba(0,0,0,0.14)"/>
+    <circle cx="500" cy="360" r="20" fill="rgba(255,255,255,0.55)"/>
+    <rect x="32" y="120" width="240" height="54" rx="16" fill="url(#b)" opacity="0.85"/>
+    <text x="32" y="70" font-size="28" font-family="Outfit, DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="#226e8c" font-weight="700">
+      Local &amp; MY–SG trucking
+    </text>
+    <text x="32" y="102" font-size="18" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="rgba(26,90,115,0.75)">
+      Pick-up • cross-border coordination • delivery
+    </text>
+  </g>
+</svg>
+

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-label="Team and network illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef6fa"/>
+      <stop offset="1" stop-color="#d8ecf4"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#226e8c"/>
+      <stop offset="1" stop-color="#1a5a73"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e86738"/>
+      <stop offset="1" stop-color="#f08a5f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#103241" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="720" rx="36" fill="url(#bg)"/>
+
+  <!-- network path -->
+  <path
+    d="M120 220 C 220 140, 320 320, 420 240 S 620 160, 740 260"
+    fill="none"
+    stroke="rgba(34,110,140,0.22)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-dasharray="14 16"
+  />
+
+  <!-- nodes -->
+  <g filter="url(#shadow)">
+    <circle cx="120" cy="220" r="18" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="120" cy="220" r="8" fill="url(#accent)"/>
+    <circle cx="420" cy="240" r="18" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="420" cy="240" r="8" fill="url(#accent)"/>
+    <circle cx="740" cy="260" r="18" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="740" cy="260" r="8" fill="url(#accent)"/>
+  </g>
+
+  <!-- people cards -->
+  <g filter="url(#shadow)" transform="translate(130 300)">
+    <rect x="0" y="0" width="640" height="300" rx="28" fill="rgba(255,255,255,0.78)" stroke="rgba(34,110,140,0.12)" stroke-width="2"/>
+
+    <!-- person 1 -->
+    <g transform="translate(70 64)">
+      <circle cx="64" cy="58" r="48" fill="rgba(34,110,140,0.12)"/>
+      <circle cx="64" cy="54" r="24" fill="url(#brand)" opacity="0.9"/>
+      <path d="M18 140 c20 -26 72 -26 92 0" fill="none" stroke="rgba(34,110,140,0.35)" stroke-width="10" stroke-linecap="round"/>
+      <rect x="0" y="168" width="128" height="16" rx="8" fill="rgba(34,110,140,0.16)"/>
+      <rect x="18" y="194" width="92" height="12" rx="6" fill="rgba(34,110,140,0.12)"/>
+    </g>
+
+    <!-- person 2 -->
+    <g transform="translate(256 52)">
+      <circle cx="64" cy="70" r="56" fill="rgba(232,103,56,0.10)"/>
+      <circle cx="64" cy="66" r="28" fill="url(#accent)" opacity="0.92"/>
+      <path d="M10 152 c24 -30 84 -30 108 0" fill="none" stroke="rgba(232,103,56,0.32)" stroke-width="10" stroke-linecap="round"/>
+      <rect x="-2" y="182" width="132" height="16" rx="8" fill="rgba(34,110,140,0.16)"/>
+      <rect x="20" y="208" width="88" height="12" rx="6" fill="rgba(34,110,140,0.12)"/>
+    </g>
+
+    <!-- person 3 -->
+    <g transform="translate(442 64)">
+      <circle cx="64" cy="58" r="48" fill="rgba(34,110,140,0.12)"/>
+      <circle cx="64" cy="54" r="24" fill="url(#brand)" opacity="0.9"/>
+      <path d="M18 140 c20 -26 72 -26 92 0" fill="none" stroke="rgba(34,110,140,0.35)" stroke-width="10" stroke-linecap="round"/>
+      <rect x="0" y="168" width="128" height="16" rx="8" fill="rgba(34,110,140,0.16)"/>
+      <rect x="18" y="194" width="92" height="12" rx="6" fill="rgba(34,110,140,0.12)"/>
+    </g>
+  </g>
+
+  <!-- caption -->
+  <g transform="translate(92 86)">
+    <rect width="716" height="104" rx="20" fill="rgba(255,255,255,0.74)" stroke="rgba(34,110,140,0.12)" stroke-width="2"/>
+    <text x="358" y="64" text-anchor="middle" font-size="28" font-family="Outfit, DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="#226e8c" font-weight="700">
+      People + network make the difference
+    </text>
+  </g>
+</svg>
+

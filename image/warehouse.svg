@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-label="Warehouse illustration">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#226e8c"/>
+      <stop offset="1" stop-color="#1a5a73"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e86738"/>
+      <stop offset="1" stop-color="#f08a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" rx="36" fill="rgba(34,110,140,0.10)"/>
+  <g transform="translate(130 20)">
+    <path d="M40 180 L340 40 L640 180" fill="none" stroke="url(#g)" stroke-width="22" stroke-linejoin="round"/>
+    <rect x="70" y="180" width="570" height="360" rx="26" fill="rgba(34,110,140,0.12)" stroke="rgba(34,110,140,0.25)" stroke-width="3"/>
+    <rect x="110" y="240" width="180" height="240" rx="18" fill="#ffffff" opacity="0.9"/>
+    <rect x="320" y="240" width="180" height="240" rx="18" fill="#ffffff" opacity="0.85"/>
+    <rect x="530" y="240" width="80" height="240" rx="18" fill="#ffffff" opacity="0.8"/>
+    <path d="M124 300 H274" stroke="rgba(26,90,115,0.18)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M124 350 H274" stroke="rgba(26,90,115,0.18)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M124 400 H274" stroke="rgba(26,90,115,0.18)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="70" y="520" width="570" height="26" rx="13" fill="url(#a)" opacity="0.85"/>
+    <text x="355" y="605" text-anchor="middle" font-size="28" font-family="Outfit, DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="#226e8c" font-weight="700">
+      FTZ warehouse operations
+    </text>
+    <text x="355" y="640" text-anchor="middle" font-size="18" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="rgba(26,90,115,0.75)">
+      Storage • handling • documentation support
+    </text>
+  </g>
+</svg>
+

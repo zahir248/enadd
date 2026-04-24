@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-label="Sea freight illustration">
+  <defs>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#eaf3f7"/>
+      <stop offset="1" stop-color="#d7ebf3"/>
+    </linearGradient>
+    <linearGradient id="ship" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1a5a73"/>
+      <stop offset="1" stop-color="#226e8c"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e86738"/>
+      <stop offset="1" stop-color="#f08a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" rx="36" fill="url(#sea)"/>
+  <g transform="translate(110 130)">
+    <text x="340" y="38" text-anchor="middle" font-size="28" font-family="Outfit, DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="#226e8c" font-weight="700">
+      Sea freight &amp; marine logistics
+    </text>
+    <text x="340" y="70" text-anchor="middle" font-size="18" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif" fill="rgba(26,90,115,0.75)">
+      Forwarding • scheduling • ship spares support
+    </text>
+
+    <path d="M0 430 C 120 395, 220 470, 340 435 S 560 395, 680 445" fill="none" stroke="rgba(34,110,140,0.25)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 470 C 120 435, 220 510, 340 475 S 560 435, 680 485" fill="none" stroke="rgba(34,110,140,0.18)" stroke-width="8" stroke-linecap="round"/>
+
+    <g transform="translate(90 160)">
+      <path d="M30 220 H560 L520 270 H110 C78 270 52 252 30 220Z" fill="url(#ship)" opacity="0.92"/>
+      <rect x="150" y="90" width="56" height="76" rx="12" fill="rgba(255,255,255,0.22)"/>
+      <rect x="214" y="100" width="34" height="66" rx="10" fill="rgba(255,255,255,0.22)"/>
+      <rect x="80" y="150" width="460" height="70" rx="16" fill="rgba(0,0,0,0.10)"/>
+      <g transform="translate(110 108)">
+        <rect x="0" y="0" width="90" height="50" rx="10" fill="rgba(232,103,56,0.75)"/>
+        <rect x="100" y="0" width="90" height="50" rx="10" fill="rgba(255,255,255,0.18)"/>
+        <rect x="200" y="0" width="90" height="50" rx="10" fill="rgba(232,103,56,0.55)"/>
+        <rect x="300" y="0" width="90" height="50" rx="10" fill="rgba(255,255,255,0.16)"/>
+      </g>
+      <path d="M70 250 H500" stroke="url(#a)" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+    </g>
+  </g>
+</svg>
+

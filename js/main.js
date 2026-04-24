@@ -12,6 +12,27 @@
     typeof window.matchMedia === "function" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // EmailJS configuration (GitHub Pages friendly)
+  // Replace these with your EmailJS values:
+  var EMAILJS_PUBLIC_KEY = "_KWQTjocabj0U71Mj";
+  var EMAILJS_SERVICE_ID = "service_vwrwsa4";
+  var EMAILJS_TEMPLATE_ID = "template_izobm9z";
+
+  if (typeof emailjs !== "undefined" && EMAILJS_PUBLIC_KEY !== "YOUR_EMAILJS_PUBLIC_KEY") {
+    try {
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    } catch (err) {
+      // Ignore init issues; submit handler will surface errors.
+    }
+  }
+
+  /* —— Make all images feel interactive —— */
+  document.querySelectorAll("img").forEach(function (img) {
+    if (img.classList.contains("brand-logo")) return;
+    if (img.hasAttribute("data-no-alive")) return;
+    img.classList.add("img-alive");
+  });
+
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
@@ -40,6 +61,24 @@
     toTopBtn.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
     });
+  }
+
+  function showFormToast(message, kind) {
+    var toastEl = document.getElementById("formToast");
+    var toastBody = document.getElementById("formToastBody");
+    if (!toastEl || !toastBody) return;
+
+    toastBody.textContent = message;
+
+    toastEl.classList.remove("text-bg-success", "text-bg-danger", "text-bg-secondary");
+    if (kind === "error") toastEl.classList.add("text-bg-danger");
+    else if (kind === "info") toastEl.classList.add("text-bg-secondary");
+    else toastEl.classList.add("text-bg-success");
+
+    if (typeof bootstrap !== "undefined" && bootstrap.Toast) {
+      var toast = bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 4200 });
+      toast.show();
+    }
   }
 
   /* —— Hero rotating line —— */
@@ -128,6 +167,7 @@
     function easeOutQuart(t) {
       return 1 - Math.pow(1 - t, 4);
     }
+    el.classList.add("is-counting");
     function frame(now) {
       var t = Math.min(1, (now - start) / duration);
       var eased = easeOutQuart(t);
@@ -137,6 +177,7 @@
         requestAnimationFrame(frame);
       } else {
         el.textContent = String(target);
+        el.classList.remove("is-counting");
       }
     }
     requestAnimationFrame(frame);
@@ -154,7 +195,8 @@
             var raw = node.getAttribute("data-target");
             var target = raw ? parseInt(raw, 10) : 0;
             if (!isNaN(target)) {
-              animateCount(node, target, 1400);
+              var duration = Math.max(900, Math.min(1800, target * 1.2));
+              animateCount(node, target, duration);
             }
           });
           statsIo.disconnect();
@@ -276,12 +318,46 @@
       }
 
       form.classList.add("was-validated");
-      formStatus.textContent =
-        "Thank you — this is a demo form. Please call (65) 6100 0430 or email your enquiry.";
-      formStatus.classList.remove("text-muted");
-      formStatus.classList.add("text-success");
-      form.reset();
-      form.classList.remove("was-validated");
+      formStatus.textContent = "Sending…";
+      formStatus.classList.remove("text-muted", "text-success", "text-danger");
+      formStatus.classList.add("text-muted");
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.setAttribute("aria-disabled", "true");
+      }
+
+      if (
+        typeof emailjs === "undefined" ||
+        EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY" ||
+        EMAILJS_SERVICE_ID === "YOUR_EMAILJS_SERVICE_ID" ||
+        EMAILJS_TEMPLATE_ID === "YOUR_EMAILJS_TEMPLATE_ID"
+      ) {
+        formStatus.textContent =
+          "Email is not configured yet. Please set EmailJS keys in js/main.js.";
+        formStatus.classList.remove("text-muted");
+        formStatus.classList.add("text-danger");
+        if (submitBtn) submitBtn.disabled = false;
+        return;
+      }
+
+      emailjs
+        .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        .then(function () {
+          formStatus.textContent = "";
+          formStatus.classList.remove("text-muted", "text-danger", "text-success");
+          showFormToast("Sent. Thank you — we’ll get back to you shortly.", "success");
+          form.reset();
+          form.classList.remove("was-validated");
+          if (submitBtn) submitBtn.disabled = false;
+        })
+        .catch(function () {
+          formStatus.textContent = "";
+          formStatus.classList.remove("text-muted", "text-danger", "text-success");
+          showFormToast("Sorry, message failed to send. Please call (65) 6100 0430.", "error");
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 
@@ -290,10 +366,23 @@
       link.addEventListener("click", function () {
         var collapse = document.getElementById("navCollapse");
         if (collapse && collapse.classList.contains("show")) {
-          var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
-          bsCollapse.hide();
+          if (typeof bootstrap !== "undefined" && bootstrap.Collapse) {
+            var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
+            bsCollapse.hide();
+          }
         }
       });
     }
   );
+
+  // Close mobile nav on any nav click (multi-page)
+  document.querySelectorAll(".navbar-collapse .nav-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      var collapse = document.getElementById("navCollapse");
+      if (!collapse || !collapse.classList.contains("show")) return;
+      if (typeof bootstrap === "undefined" || !bootstrap.Collapse) return;
+      var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
+      bsCollapse.hide();
+    });
+  });
 })();

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Heavy lift icon">
+  <defs>
+    <linearGradient id="b" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#226e8c"/>
+      <stop offset="1" stop-color="#1a5a73"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e86738"/>
+      <stop offset="1" stop-color="#f08a5f"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="40" width="208" height="176" rx="36" fill="rgba(232,103,56,0.06)" stroke="rgba(34,110,140,0.16)" stroke-width="6"/>
+  <path d="M72 84 h112" stroke="url(#b)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M128 84 v84" stroke="url(#b)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M128 168 c0 18 -14 32 -32 32" fill="none" stroke="rgba(34,110,140,0.26)" stroke-width="10" stroke-linecap="round"/>
+  <rect x="64" y="176" width="96" height="28" rx="14" fill="#ffffff" opacity="0.9"/>
+  <path d="M176 84 v48" stroke="rgba(232,103,56,0.85)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="176" cy="142" r="12" fill="url(#a)"/>
+</svg>
+

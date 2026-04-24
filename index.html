@@ -23,13 +23,13 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+  <body>
     <nav
       id="mainNav"
       class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm navbar-enadd"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center py-1" href="#top">
+        <a class="navbar-brand d-flex align-items-center py-1" href="index.html" aria-label="ENADD Logistics home">
           <img
             class="brand-logo"
             src="image/enadd-logo.png"
@@ -52,26 +52,26 @@
         <div class="collapse navbar-collapse" id="navCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#management">Management</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="#contact"
+          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="contact.html#enquiry"
             >Get a quote</a
           >
         </div>
       </div>
     </nav>
 
-    <header id="top" class="hero position-relative overflow-hidden">
+    <header class="hero position-relative overflow-hidden">
       <div class="hero-bg hero-parallax" aria-hidden="true"></div>
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-orbs" aria-hidden="true">
@@ -137,12 +137,8 @@
               global agent network across 42 countries.
             </p>
             <div class="d-flex flex-wrap gap-3 hero-reveal hero-reveal--delay-4">
-              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="#services"
-                >Explore services</a
-              >
-              <a class="btn btn-outline-light btn-lg px-4 btn-ripple" href="#contact"
-                >Contact us</a
-              >
+              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="services.html">Explore services</a>
+              <a class="btn btn-outline-light btn-lg px-4 btn-ripple" href="contact.html">Contact us</a>
             </div>
           </div>
           <div class="col-lg-5 d-none d-lg-block">
@@ -175,6 +171,14 @@
                     >
                   </li>
                 </ul>
+                <div class="mt-4">
+                  <img
+                    src="image/hero-logistics.svg"
+                    class="img-fluid rounded-4 border"
+                    alt="Illustration of a container ship, warehouse, and trucks"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -183,12 +187,12 @@
     </header>
 
     <main>
-      <section id="about" class="py-5 section-surface">
+      <section class="py-5 section-surface">
         <div class="container py-lg-4">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center mb-5 reveal">
               <span class="section-label">Company profile</span>
-              <h2 class="section-title">Growing with Singapore’s trade</h2>
+              <h2 class="section-title">A logistics partner built for follow-through</h2>
               <p class="text-muted mx-auto" style="max-width: 42rem">
                 Established in 2016, ENADD Logistics (S) Pte Ltd is a growing
                 freight forwarding, marine &amp; offshore logistics company in
@@ -196,6 +200,7 @@
                 specific requirements are met — helping you manage cost with
                 confidence.
               </p>
+              <a class="btn btn-outline-secondary btn-sm px-3" href="about.html">Learn more about ENADD</a>
             </div>
           </div>
           <div class="row g-4">
@@ -233,69 +238,74 @@
         </div>
       </section>
 
-      <section id="management" class="py-5 bg-brand text-white position-relative overflow-hidden">
+      <section class="py-5 bg-brand text-white position-relative overflow-hidden">
         <div class="management-glow" aria-hidden="true"></div>
         <div class="container py-lg-4 position-relative">
           <div class="row align-items-center g-5">
             <div class="col-lg-6 reveal">
-              <span class="section-label text-white-50">Management</span>
-              <h2 class="section-title text-white mb-4">
-                Human capital at the centre of every move
-              </h2>
+              <span class="section-label text-white-50">Capabilities</span>
+              <h2 class="section-title text-white mb-4">Built for operations, not just quotes</h2>
               <p class="text-white-75 mb-4">
-                We understand that people make the difference in service
-                quality. Supported by our own office and associates worldwide,
-                ENADD employs professionals who follow up and follow through on
-                each transaction we manage.
+                Practical capacity matters. We combine an FTZ warehouse operation, trucking coordination,
+                and a global agent network to keep shipments moving smoothly from booking to delivery.
               </p>
-              <p class="text-white-75 mb-0">
-                With our agent network across 42 countries, we aim to be among
-                the most reliable freight forwarding, marine &amp; offshore
-                logistics providers in the market — combining an FTZ warehouse,
-                trucking fleet, and two Singapore offices to keep your cargo
-                moving.
-              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-light btn-sm px-3" href="services.html">See service catalogue</a>
+                <a class="btn btn-outline-light btn-sm px-3" href="contact.html">Request a quote</a>
+              </div>
             </div>
             <div class="col-lg-6 reveal reveal-delay-2">
               <div class="row g-3">
                 <div class="col-6">
                   <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span
-                      class="display-6 fw-bold text-accent stat-number"
-                      data-target="42"
-                      >0</span
-                    >
+                    <span class="display-6 fw-bold text-accent stat-number" data-target="42">0</span>
                     <p class="small mb-0 text-white-75">Countries in agent network</p>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span
-                      class="display-6 fw-bold text-accent stat-number"
-                      data-target="4"
-                      >0</span
-                    >
+                    <span class="display-6 fw-bold text-accent stat-number" data-target="4">0</span>
                     <p class="small mb-0 text-white-75">Trucks for local &amp; MY–SG</p>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span
-                      class="display-6 fw-bold text-accent stat-number"
-                      data-target="2"
-                      >0</span
-                    >
+                    <span class="display-6 fw-bold text-accent stat-number" data-target="2">0</span>
                     <p class="small mb-0 text-white-75">Local offices (main &amp; FTZ)</p>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span
-                      class="display-6 fw-bold text-accent stat-number"
-                      data-target="1"
-                      >0</span
-                    >
+                    <span class="display-6 fw-bold text-accent stat-number" data-target="1">0</span>
                     <p class="small mb-0 text-white-75">FTZ warehouse operation</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-3 p-md-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-10">
+                    <div class="row g-3 align-items-center">
+                      <div class="col-12 col-sm-6">
+                        <div class="capability-media">
+                          <img
+                            src="image/warehouse.svg"
+                            class="capability-media__img"
+                            alt="Warehouse illustration"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="capability-media">
+                          <img
+                            src="image/trucking.svg"
+                            class="capability-media__img"
+                            alt="Trucking illustration"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -304,114 +314,55 @@
         </div>
       </section>
 
-      <section id="services" class="py-5 section-surface">
+      <section class="py-5 section-surface">
         <div class="container py-lg-4">
           <div class="text-center mb-4 reveal">
-            <span class="section-label">Our services</span>
-            <h2 class="section-title">End-to-end logistics capability</h2>
+            <span class="section-label">Featured services</span>
+            <h2 class="section-title">End-to-end logistics, made easier</h2>
             <p class="text-muted mx-auto mb-4" style="max-width: 40rem">
               From air and sea freight to heavy lift project cargo and ship’s
               spares, we coordinate the details so you can focus on your
               business.
             </p>
-            <div
-              class="d-flex flex-wrap justify-content-center gap-2 service-filters"
-              role="group"
-              aria-label="Filter service categories"
-            >
-              <button
-                type="button"
-                class="btn btn-sm service-filter-btn active"
-                data-filter="all"
-              >
-                All
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="land">
-                Land &amp; trucking
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="airsea">
-                Air &amp; sea
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="ftz">
-                FTZ &amp; clearance
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="handling">
-                Handling
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="project">
-                Heavy lift
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="marine">
-                Marine
-              </button>
-              <button type="button" class="btn btn-sm service-filter-btn" data-filter="express">
-                Express &amp; insurance
-              </button>
-            </div>
           </div>
-          <div class="row g-4" id="serviceCardGrid">
-            <div class="col-md-6 col-lg-4 service-col reveal" data-service="land">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Local &amp; regional transport</h3>
-                <p class="small text-muted mb-0">
-                  Local cargo pick-up, Malaysia–Singapore trucking, and
-                  coordination for onward delivery.
-                </p>
+                <div class="d-flex align-items-start gap-3">
+                  <img src="image/sea-freight.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <div>
+                    <h3 class="h6 text-brand mb-2">Air &amp; sea freight</h3>
+                    <p class="small text-muted mb-0">
+                      Forwarding, scheduling, and spot-rate negotiation for bulk cargo.
+                    </p>
+                  </div>
+                </div>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4 service-col reveal reveal-delay-1" data-service="airsea">
+            <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Air &amp; sea freight</h3>
-                <p class="small text-muted mb-0">
-                  Air and sea freight forwarding, negotiation of special spot
-                  rates for bulk cargo with airlines and carriers.
-                </p>
+                <div class="d-flex align-items-start gap-3">
+                  <img src="image/trucking.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <div>
+                    <h3 class="h6 text-brand mb-2">Local &amp; MY–SG trucking</h3>
+                    <p class="small text-muted mb-0">
+                      Pick-up, cross-border coordination, and delivery planning.
+                    </p>
+                  </div>
+                </div>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4 service-col reveal reveal-delay-2" data-service="ftz">
+            <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">FTZ &amp; customs</h3>
-                <p class="small text-muted mb-0">
-                  Import clearance from various FTZs in Singapore, delivery to
-                  local address, and FTZ warehouse operations.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4 service-col reveal" data-service="handling">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Cargo handling &amp; value-add</h3>
-                <p class="small text-muted mb-0">
-                  Fumigation, packing and repacking, inward / outward /
-                  transhipment cargo handling.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4 service-col reveal reveal-delay-1" data-service="project">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Project &amp; heavy lift</h3>
-                <p class="small text-muted mb-0">
-                  Specialised heavy lift, project cargo, and odd-size shipments
-                  with careful planning and execution.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4 service-col reveal reveal-delay-2" data-service="marine">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Marine &amp; shipping support</h3>
-                <p class="small text-muted mb-0">
-                  Ship’s spare in transit and worldwide onboard delivery,
-                  shipping agencies support, OPL boat, lighterage, tug &amp;
-                  barge supply.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4 service-col reveal" data-service="express">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <h3 class="h6 text-brand mb-2">Insurance &amp; express</h3>
-                <p class="small text-muted mb-0">
-                  Marine insurance arrangements and worldwide hand-carry service
-                  for time-critical movements.
-                </p>
+                <div class="d-flex align-items-start gap-3">
+                  <img src="image/warehouse.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <div>
+                    <h3 class="h6 text-brand mb-2">FTZ &amp; customs support</h3>
+                    <p class="small text-muted mb-0">
+                      Clearance, FTZ handling, and last-mile delivery coordination.
+                    </p>
+                  </div>
+                </div>
               </article>
             </div>
           </div>
@@ -419,38 +370,13 @@
             <div class="col-lg-10 reveal">
               <div class="card border-0 shadow-sm rounded-4 catalogue-card">
                 <div class="card-body p-4 p-lg-5">
-                  <h3 class="h5 text-brand mb-4 text-center">Full service catalogue</h3>
-                  <ul class="row list-unstyled small service-list gy-2 gx-lg-4">
-                    <li class="col-md-6">Local cargo pick-up services</li>
-                    <li class="col-md-6">
-                      Negotiation of special spot rates from airlines / carriers
-                      for bulk cargo
-                    </li>
-                    <li class="col-md-6">Fumigation</li>
-                    <li class="col-md-6">Packing / repacking of cargo</li>
-                    <li class="col-md-6">
-                      Import clearance from various free trade zones in
-                      Singapore and delivery to local address
-                    </li>
-                    <li class="col-md-6">Free trade zone warehouse operator</li>
-                    <li class="col-md-6">Malaysia – Singapore trucking</li>
-                    <li class="col-md-6">
-                      Heavy lift — project cargo / odd size cargo
-                    </li>
-                    <li class="col-md-6">Air &amp; sea freight forwarding</li>
-                    <li class="col-md-6">
-                      Ship’s spare in transit &amp; worldwide onboard delivery
-                    </li>
-                    <li class="col-md-6">
-                      Inward / outward / transhipment cargoes handling
-                    </li>
-                    <li class="col-md-6">Shipping agencies support</li>
-                    <li class="col-md-6">
-                      OPL boat / lighterage / tug &amp; barge supply
-                    </li>
-                    <li class="col-md-6">Marine insurance</li>
-                    <li class="col-md-6">Worldwide hand-carry service</li>
-                  </ul>
+                  <h3 class="h5 text-brand mb-3 text-center">Need the full list?</h3>
+                  <p class="text-muted text-center mb-4">
+                    View the complete service catalogue, including marine logistics, heavy lift project cargo, and ship’s spares.
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <a class="btn btn-accent px-4" href="services.html">Open service catalogue</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -458,127 +384,69 @@
         </div>
       </section>
 
-      <section
-        id="contact"
-        class="py-5 bg-brand text-white position-relative overflow-hidden"
-      >
-        <div class="management-glow" aria-hidden="true"></div>
-        <div class="container py-lg-4 position-relative">
-          <div class="row g-5">
-            <div class="col-lg-5 reveal">
-              <span class="section-label text-white-50">Contact</span>
-              <h2 class="section-title text-white mb-3">Visit or reach our team</h2>
-              <p class="text-white-75">
-                For rates, bookings, and operational support, contact our
-                Changi office. All business transactions are subject to our
-                Standard Trading Conditions; copies are available on request.
+      <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 reveal">
+              <span class="section-label">Gallery</span>
+              <h2 class="section-title">A clearer view of what we handle</h2>
+              <p class="text-muted mb-0" style="max-width: 40rem">
+                Visuals make trust easier. These illustrations represent common shipment types and operations we coordinate
+                across air, sea, FTZ, and last-mile delivery.
               </p>
-              <div class="contact-block mt-4">
-                <p class="fw-semibold text-accent mb-1">Office</p>
-                <p class="mb-3 text-white-75">
-                  119 Airport Cargo Road, Changi Cargo Agent Megaplex 1,
-                  #02-07/08<br />
-                  Singapore 819454
-                </p>
-                <p class="fw-semibold text-accent mb-1">Mailing address</p>
-                <p class="mb-3 text-white-75">
-                  P.O. Box No. 981, Changi Airfreight Centre<br />
-                  Singapore 918117
-                </p>
-                <p class="mb-1 text-white-75">
-                  <strong class="text-white">Tel:</strong>
-                  <a
-                    href="tel:+6561000430"
-                    class="link-light text-decoration-none contact-tel-link"
-                    >(65) 6100 0430</a
-                  >
-                </p>
-                <p class="mb-1 text-white-75">
-                  <strong class="text-white">Fax:</strong> (65) 6214 1609
-                </p>
-                <p class="mb-0 small text-white-50">
-                  UEN / Company Registration No.: 201624849M
-                </p>
-              </div>
             </div>
-            <div class="col-lg-7 reveal reveal-delay-1">
-              <div class="card border-0 shadow-sm rounded-4 overflow-hidden tilt-card" data-tilt>
-                <div class="card-body p-4 p-lg-5">
-                  <h3 class="h5 text-brand mb-4">Send an enquiry</h3>
-                  <form id="contactForm" class="needs-validation" novalidate>
-                    <div class="row g-3">
-                      <div class="col-md-6">
-                        <label for="name" class="form-label">Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          name="name"
-                          required
-                        />
-                        <div class="invalid-feedback">
-                          Please enter your name.
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="company" class="form-label">Company</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="company"
-                          name="company"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          required
-                        />
-                        <div class="invalid-feedback">
-                          Please enter a valid email.
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input
-                          type="tel"
-                          class="form-control"
-                          id="phone"
-                          name="phone"
-                        />
-                      </div>
-                      <div class="col-12">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea
-                          class="form-control"
-                          id="message"
-                          name="message"
-                          rows="4"
-                          required
-                        ></textarea>
-                        <div class="invalid-feedback">
-                          Please tell us how we can help.
-                        </div>
-                      </div>
-                      <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
-                        <button type="submit" class="btn btn-accent px-4">
-                          Submit enquiry
-                        </button>
-                        <span
-                          id="formStatus"
-                          class="small text-muted"
-                          role="status"
-                          aria-live="polite"
-                        ></span>
-                      </div>
+            <div class="col-lg-6 reveal reveal-delay-1">
+              <div class="row g-3">
+                <div class="col-6">
+                  <figure class="media-card">
+                    <div class="media-card__media">
+                      <img src="image/hero-logistics.svg" alt="Logistics operations overview" loading="lazy" />
                     </div>
-                  </form>
+                    <figcaption>Operations overview</figcaption>
+                  </figure>
+                </div>
+                <div class="col-6">
+                  <figure class="media-card">
+                    <div class="media-card__media">
+                      <img src="image/warehouse.svg" alt="FTZ warehouse and storage" loading="lazy" />
+                    </div>
+                    <figcaption>FTZ warehouse</figcaption>
+                  </figure>
+                </div>
+                <div class="col-6">
+                  <figure class="media-card">
+                    <div class="media-card__media">
+                      <img src="image/trucking.svg" alt="Local and cross-border trucking" loading="lazy" />
+                    </div>
+                    <figcaption>Trucking coordination</figcaption>
+                  </figure>
+                </div>
+                <div class="col-6">
+                  <figure class="media-card">
+                    <div class="media-card__media">
+                      <img src="image/sea-freight.svg" alt="Sea freight forwarding and marine logistics" loading="lazy" />
+                    </div>
+                    <figcaption>Sea freight</figcaption>
+                  </figure>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-brand text-white position-relative overflow-hidden">
+        <div class="management-glow" aria-hidden="true"></div>
+        <div class="container py-lg-4 position-relative">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8 reveal">
+              <h2 class="section-title text-white mb-2">Ready to move a shipment?</h2>
+              <p class="text-white-75 mb-0">
+                Get in touch for rates, bookings, and operational support. Business transactions are subject to Standard Trading Conditions.
+              </p>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-lg-end reveal reveal-delay-1">
+              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="contact.html">Contact our team</a>
             </div>
           </div>
         </div>
