@@ -79,40 +79,6 @@
         <span class="orb orb-2"></span>
         <span class="orb orb-3"></span>
       </div>
-      <svg
-        class="hero-route d-none d-md-block"
-        viewBox="0 0 900 200"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          id="heroRoutePath"
-          class="hero-route__path"
-          d="M40 120 C 200 20, 320 180, 480 100 S 720 40, 860 130"
-          stroke="rgba(255,255,255,0.22)"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-dasharray="10 14"
-        />
-        <circle r="7" fill="#e86738" opacity="0.95">
-          <animateMotion
-            dur="18s"
-            repeatCount="indefinite"
-            rotate="auto"
-            path="M40 120 C 200 20, 320 180, 480 100 S 720 40, 860 130"
-          />
-        </circle>
-        <circle r="5" fill="#ffffff" opacity="0.75">
-          <animateMotion
-            dur="18s"
-            repeatCount="indefinite"
-            rotate="auto"
-            begin="-9s"
-            path="M40 120 C 200 20, 320 180, 480 100 S 720 40, 860 130"
-          />
-        </circle>
-      </svg>
       <div class="container position-relative hero-inner py-3 py-lg-4">
         <div class="row align-items-center gy-4 gy-lg-0">
           <div class="col-lg-7 py-lg-2">
@@ -173,10 +139,12 @@
                 </ul>
                 <div class="mt-4">
                   <img
-                    src="image/hero-logistics.svg"
+                    src="image/photo-01-hero.jpg"
                     class="img-fluid rounded-4 border"
-                    alt="Illustration of a container ship, warehouse, and trucks"
+                    alt="Container ship and logistics operations"
                     loading="lazy"
+                    decoding="async"
+                    style="aspect-ratio: 16 / 10; object-fit: cover"
                   />
                 </div>
               </div>
@@ -286,9 +254,9 @@
                       <div class="col-12 col-sm-6">
                         <div class="capability-media">
                           <img
-                            src="image/warehouse.svg"
+                            src="image/photo-02-cap-warehouse.jpg"
                             class="capability-media__img"
-                            alt="Warehouse illustration"
+                            alt="Warehouse operations"
                             loading="lazy"
                             decoding="async"
                           />
@@ -297,9 +265,9 @@
                       <div class="col-12 col-sm-6">
                         <div class="capability-media">
                           <img
-                            src="image/trucking.svg"
+                            src="image/photo-03-cap-trucking.jpg"
                             class="capability-media__img"
-                            alt="Trucking illustration"
+                            alt="Trucking and fleet operations"
                             loading="lazy"
                             decoding="async"
                           />
@@ -329,7 +297,16 @@
             <div class="col-md-6 col-lg-4 reveal">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
                 <div class="d-flex align-items-start gap-3">
-                  <img src="image/sea-freight.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <img
+                    src="image/photo-21-index-feature-sea.jpg"
+                    width="56"
+                    height="56"
+                    class="service-icon"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <div>
                     <h3 class="h6 text-brand mb-2">Air &amp; sea freight</h3>
                     <p class="small text-muted mb-0">
@@ -342,7 +319,16 @@
             <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
                 <div class="d-flex align-items-start gap-3">
-                  <img src="image/trucking.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <img
+                    src="image/photo-22-index-feature-truck.jpg"
+                    width="56"
+                    height="56"
+                    class="service-icon"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <div>
                     <h3 class="h6 text-brand mb-2">Local &amp; MY–SG trucking</h3>
                     <p class="small text-muted mb-0">
@@ -355,7 +341,16 @@
             <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
               <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
                 <div class="d-flex align-items-start gap-3">
-                  <img src="image/warehouse.svg" width="56" height="56" alt="" aria-hidden="true" />
+                  <img
+                    src="image/photo-23-index-feature-ftz.jpg"
+                    width="56"
+                    height="56"
+                    class="service-icon"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <div>
                     <h3 class="h6 text-brand mb-2">FTZ &amp; customs support</h3>
                     <p class="small text-muted mb-0">
@@ -400,7 +395,7 @@
                 <div class="col-6">
                   <figure class="media-card">
                     <div class="media-card__media">
-                      <img src="image/hero-logistics.svg" alt="Logistics operations overview" loading="lazy" />
+                      <img src="image/photo-04-gallery-ship.jpg" alt="Container shipping operations" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>Operations overview</figcaption>
                   </figure>
@@ -408,7 +403,7 @@
                 <div class="col-6">
                   <figure class="media-card">
                     <div class="media-card__media">
-                      <img src="image/warehouse.svg" alt="FTZ warehouse and storage" loading="lazy" />
+                      <img src="image/photo-05-gallery-warehouse.jpg" alt="FTZ warehouse and storage" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>FTZ warehouse</figcaption>
                   </figure>
@@ -416,7 +411,7 @@
                 <div class="col-6">
                   <figure class="media-card">
                     <div class="media-card__media">
-                      <img src="image/trucking.svg" alt="Local and cross-border trucking" loading="lazy" />
+                      <img src="image/photo-06-gallery-trucking.jpg" alt="Local and cross-border trucking" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>Trucking coordination</figcaption>
                   </figure>
@@ -424,7 +419,7 @@
                 <div class="col-6">
                   <figure class="media-card">
                     <div class="media-card__media">
-                      <img src="image/sea-freight.svg" alt="Sea freight forwarding and marine logistics" loading="lazy" />
+                      <img src="image/photo-07-gallery-sea.jpg" alt="Sea freight forwarding and marine logistics" loading="lazy" decoding="async" />
                     </div>
                     <figcaption>Sea freight</figcaption>
                   </figure>
