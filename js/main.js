@@ -1,6 +1,19 @@
 (function () {
   "use strict";
 
+  /* Normalize .../index.html → .../ in the address bar (GitHub Pages quirk / redirects). */
+  try {
+    var path = window.location.pathname;
+    if (path.endsWith("/index.html")) {
+      var cleanPath = path.slice(0, -"index.html".length);
+      window.history.replaceState(
+        null,
+        "",
+        cleanPath + window.location.search + window.location.hash
+      );
+    }
+  } catch (ignore) {}
+
   var nav = document.getElementById("mainNav");
   var yearEl = document.getElementById("year");
   var form = document.getElementById("contactForm");
