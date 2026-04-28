@@ -17,10 +17,6 @@ body {
   color: #1c2b33;
 }
 
-main {
-  padding-top: 4.75rem;
-}
-
 .scroll-anchor {
   scroll-margin-top: 6.5rem;
 }
@@ -277,6 +273,25 @@ main {
   backdrop-filter: blur(6px);
 }
 
+/* Home capabilities: equal tile height; content centered vertically and horizontally */
+.stat-pill.stat-pill--capability {
+  min-height: clamp(11rem, 6vw + 9.25rem, 13.75rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-pill.stat-pill--capability > .small {
+  max-width: 100%;
+  text-wrap: balance;
+}
+
+.stat-pill.stat-pill--capability > .stat-number + .small {
+  margin-top: 0.35rem;
+}
+
 .service-card {
   border-color: rgba(34, 110, 140, 0.1) !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -290,6 +305,28 @@ main {
   border: 1px solid rgba(34, 110, 140, 0.16);
   background: rgba(34, 110, 140, 0.06);
   flex: 0 0 auto;
+}
+
+/* Services page — Browse by category: image on top, copy below */
+#serviceCardGrid .service-browse-card__media,
+.service-browse-cards .service-browse-card__media {
+  flex: 0 0 auto;
+  border: 1px solid rgba(34, 110, 140, 0.16);
+  background: rgba(34, 110, 140, 0.06);
+  aspect-ratio: 16 / 10;
+}
+
+#serviceCardGrid .service-browse-card__img,
+.service-browse-cards .service-browse-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#serviceCardGrid .service-browse-card__body,
+.service-browse-cards .service-browse-card__body {
+  flex: 1 1 auto;
 }
 
 .service-card:hover {
@@ -605,6 +642,11 @@ main {
 
 .service-col.is-filtered-out {
   display: none !important;
+}
+
+/* Services browse grid: when “All” is active and the last row has one card, center it */
+#serviceCardGrid .service-col.service-col--last-centered {
+  margin-inline: auto;
 }
 
 .catalogue-card {

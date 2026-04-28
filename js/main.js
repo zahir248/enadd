@@ -222,6 +222,7 @@
 
   function applyServiceFilter(key) {
     serviceCols.forEach(function (col) {
+      col.classList.remove("service-col--last-centered");
       var cat = col.getAttribute("data-service") || "";
       if (key === "all" || cat === key) {
         col.classList.remove("is-filtered-out");
@@ -233,6 +234,17 @@
     if (serviceCardGrid) {
       if (key === "all") {
         serviceCardGrid.classList.remove("justify-content-center");
+        var visibleCols = Array.prototype.filter.call(
+          serviceCardGrid.querySelectorAll(".service-col"),
+          function (c) {
+            return !c.classList.contains("is-filtered-out");
+          }
+        );
+        if (visibleCols.length % 2 === 1) {
+          visibleCols[visibleCols.length - 1].classList.add(
+            "service-col--last-centered"
+          );
+        }
       } else {
         serviceCardGrid.classList.add("justify-content-center");
       }
@@ -263,6 +275,16 @@
       applyServiceFilter(key);
     });
   });
+
+  if (filterBtns.length && serviceCols.length) {
+    var initialFilter = "all";
+    filterBtns.forEach(function (b) {
+      if (b.classList.contains("active")) {
+        initialFilter = b.getAttribute("data-filter") || "all";
+      }
+    });
+    applyServiceFilter(initialFilter);
+  }
 
   /* —— Tilt cards (pointer) —— */
   function setupTilt(root) {
@@ -385,4 +407,14 @@
       bsCollapse.hide();
     });
   });
+
+  var gurusoftUrl =
+    typeof window !== "undefined" && window.ENADD_GURUSOFT_PORTAL_URL
+      ? String(window.ENADD_GURUSOFT_PORTAL_URL).trim()
+      : "";
+  if (gurusoftUrl) {
+    document.querySelectorAll("a[data-enadd-gurusoft]").forEach(function (a) {
+      a.setAttribute("href", gurusoftUrl);
+    });
+  }
 })();

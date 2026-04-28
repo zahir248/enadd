@@ -55,16 +55,16 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about/index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="services/index.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact/index.html">Contact</a>
             </li>
           </ul>
-          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="contact.html#enquiry"
+          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="contact/index.html#enquiry"
             >Get a quote</a
           >
         </div>
@@ -103,8 +103,8 @@
               global agent network across 42 countries.
             </p>
             <div class="d-flex flex-wrap gap-3 hero-reveal hero-reveal--delay-4">
-              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="services.html">Explore services</a>
-              <a class="btn btn-outline-light btn-lg px-4 btn-ripple" href="contact.html">Contact us</a>
+              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="services/index.html">Explore services</a>
+              <a class="btn btn-outline-light btn-lg px-4 btn-ripple" href="contact/index.html">Contact us</a>
             </div>
           </div>
           <div class="col-lg-5 d-none d-lg-block">
@@ -168,7 +168,7 @@
                 specific requirements are met — helping you manage cost with
                 confidence.
               </p>
-              <a class="btn btn-outline-secondary btn-sm px-3" href="about.html">Learn more about ENADD</a>
+              <a class="btn btn-outline-secondary btn-sm px-3" href="about/index.html">Learn more about ENADD</a>
             </div>
           </div>
           <div class="row g-4">
@@ -218,34 +218,31 @@
                 and a global agent network to keep shipments moving smoothly from booking to delivery.
               </p>
               <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-light btn-sm px-3" href="services.html">See service catalogue</a>
-                <a class="btn btn-outline-light btn-sm px-3" href="contact.html">Request a quote</a>
+                <a class="btn btn-light btn-sm px-3" href="services/index.html">See service catalogue</a>
+                <a class="btn btn-outline-light btn-sm px-3" href="contact/index.html">Request a quote</a>
               </div>
             </div>
             <div class="col-lg-6 reveal reveal-delay-2">
               <div class="row g-3">
                 <div class="col-6">
-                  <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span class="display-6 fw-bold text-accent stat-number" data-target="42">0</span>
+                  <div class="stat-pill stat-pill--capability p-4 rounded-4 bg-white bg-opacity-10 h-100">
+                    <span class="display-6 fw-bold text-accent stat-number flex-shrink-0" data-target="42">0</span>
                     <p class="small mb-0 text-white-75">Countries in agent network</p>
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span class="display-6 fw-bold text-accent stat-number" data-target="4">0</span>
-                    <p class="small mb-0 text-white-75">Trucks for local &amp; MY–SG</p>
+                  <div class="stat-pill stat-pill--capability p-4 rounded-4 bg-white bg-opacity-10 h-100">
+                    <p class="small mb-0 text-white-75">Manage truck for local &amp; Malaysia</p>
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span class="display-6 fw-bold text-accent stat-number" data-target="2">0</span>
-                    <p class="small mb-0 text-white-75">Local offices (main &amp; FTZ)</p>
+                  <div class="stat-pill stat-pill--capability p-4 rounded-4 bg-white bg-opacity-10 h-100">
+                    <p class="small mb-0 text-white-75">Local offices</p>
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="stat-pill text-center p-4 rounded-4 bg-white bg-opacity-10">
-                    <span class="display-6 fw-bold text-accent stat-number" data-target="1">0</span>
-                    <p class="small mb-0 text-white-75">FTZ warehouse operation</p>
+                  <div class="stat-pill stat-pill--capability p-4 rounded-4 bg-white bg-opacity-10 h-100">
+                    <p class="small mb-0 text-white-75">Local, FTZ and local operator</p>
                   </div>
                 </div>
                 <div class="col-12">
@@ -293,21 +290,23 @@
               business.
             </p>
           </div>
-          <div class="row g-4">
+          <div class="row g-4 g-lg-5 service-browse-cards">
             <div class="col-md-6 col-lg-4 reveal">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex align-items-start gap-3">
-                  <img
-                    src="image/photo-21-index-feature-sea.jpg"
-                    width="56"
-                    height="56"
-                    class="service-icon"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div>
+              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
+                <div class="d-flex flex-column h-100 gap-3">
+                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+                    <img
+                      src="image/photo-21-index-feature-sea.jpg"
+                      width="880"
+                      height="550"
+                      class="service-browse-card__img"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="service-browse-card__body">
                     <h3 class="h6 text-brand mb-2">Air &amp; sea freight</h3>
                     <p class="small text-muted mb-0">
                       Forwarding, scheduling, and spot-rate negotiation for bulk cargo.
@@ -317,19 +316,21 @@
               </article>
             </div>
             <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex align-items-start gap-3">
-                  <img
-                    src="image/photo-22-index-feature-truck.jpg"
-                    width="56"
-                    height="56"
-                    class="service-icon"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div>
+              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
+                <div class="d-flex flex-column h-100 gap-3">
+                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+                    <img
+                      src="image/photo-22-index-feature-truck.jpg"
+                      width="880"
+                      height="550"
+                      class="service-browse-card__img"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="service-browse-card__body">
                     <h3 class="h6 text-brand mb-2">Local &amp; MY–SG trucking</h3>
                     <p class="small text-muted mb-0">
                       Pick-up, cross-border coordination, and delivery planning.
@@ -339,19 +340,21 @@
               </article>
             </div>
             <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
-              <article class="service-card h-100 p-4 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex align-items-start gap-3">
-                  <img
-                    src="image/photo-23-index-feature-ftz.jpg"
-                    width="56"
-                    height="56"
-                    class="service-icon"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div>
+              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
+                <div class="d-flex flex-column h-100 gap-3">
+                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+                    <img
+                      src="image/photo-23-index-feature-ftz.jpg"
+                      width="880"
+                      height="550"
+                      class="service-browse-card__img"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="service-browse-card__body">
                     <h3 class="h6 text-brand mb-2">FTZ &amp; customs support</h3>
                     <p class="small text-muted mb-0">
                       Clearance, FTZ handling, and last-mile delivery coordination.
@@ -370,7 +373,7 @@
                     View the complete service catalogue, including marine logistics, heavy lift project cargo, and ship’s spares.
                   </p>
                   <div class="d-flex justify-content-center">
-                    <a class="btn btn-accent px-4" href="services.html">Open service catalogue</a>
+                    <a class="btn btn-accent px-4" href="services/index.html">Open service catalogue</a>
                   </div>
                 </div>
               </div>
@@ -440,8 +443,17 @@
                 Get in touch for rates, bookings, and operational support. Business transactions are subject to Standard Trading Conditions.
               </p>
             </div>
-            <div class="col-lg-4 d-flex justify-content-lg-end reveal reveal-delay-1">
-              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="contact.html">Contact our team</a>
+            <div
+              class="col-lg-4 d-flex flex-column flex-sm-row flex-lg-column flex-xl-row align-items-stretch align-items-lg-end justify-content-lg-end gap-2 reveal reveal-delay-1"
+            >
+              <a class="btn btn-accent btn-lg px-4 btn-ripple" href="contact/index.html">Contact our team</a>
+              <a
+                class="btn btn-outline-light btn-lg px-4 btn-ripple"
+                href="https://gurusoft.enaddlog.com.sg"
+                data-enadd-gurusoft
+                target="_blank"
+                rel="noopener noreferrer"
+                >Gurusoft<span class="d-none d-sm-inline"> operations</span> portal<span class="visually-hidden"> (opens in new tab)</span></a>
             </div>
           </div>
         </div>
@@ -464,9 +476,17 @@
           © <span id="year"></span> ENADD Logistics (S) Pte Ltd. All rights
           reserved.
         </p>
-        <p class="mb-0">
-          Standard Trading Conditions apply — available on request.
-        </p>
+        <div class="d-flex flex-column flex-md-row align-items-center gap-2 gap-md-3 text-md-end">
+          <a
+            href="https://gurusoft.enaddlog.com.sg"
+            class="link-brand"
+            data-enadd-gurusoft
+            target="_blank"
+            rel="noopener noreferrer"
+            >Gurusoft (operations)<span class="visually-hidden"> (opens in new tab)</span></a>
+          <span class="d-none d-md-inline" aria-hidden="true">·</span>
+          <span>Standard Trading Conditions apply — available on request.</span>
+        </div>
       </div>
     </footer>
 
@@ -475,6 +495,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/site-config.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
