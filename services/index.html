@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
@@ -26,10 +26,10 @@
   <body>
     <nav
       id="mainNav"
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm navbar-enadd"
+      class="navbar navbar-expand-lg navbar-light fixed-top navbar-enadd"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center py-1" href="/enadd/" aria-label="ENADD Logistics home">
+        <a class="navbar-brand d-flex align-items-center py-1" href="../index.html" aria-label="ENADD Logistics home">
           <img
             class="brand-logo"
             src="../image/enadd-logo.png"
@@ -52,94 +52,62 @@
         <div class="collapse navbar-collapse" id="navCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/">Home</a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/about/">About</a>
+              <a class="nav-link" href="../about/index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/enadd/services/">Services</a>
+              <a class="nav-link active" aria-current="page" href="../services/index.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/contact/">Contact</a>
+              <a class="nav-link" href="../contact/index.html">Contact</a>
             </li>
           </ul>
-          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="/enadd/contact/#enquiry">Get a quote</a>
+          <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="../contact/index.html#enquiry">Get a quote</a>
         </div>
       </div>
     </nav>
 
-    <header class="hero hero--page position-relative overflow-hidden">
-      <div class="hero-bg hero-parallax" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-orbs" aria-hidden="true">
-        <span class="orb orb-1"></span>
-        <span class="orb orb-2"></span>
-        <span class="orb orb-3"></span>
+    <header class="hero hero--page position-relative">
+      <div class="hero-media hero-parallax" aria-hidden="true">
+        <img
+          src="../image/photo-12-services-hero-ship.webp"
+          alt=""
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          decoding="async"
+        />
       </div>
-      <div class="container position-relative hero-inner py-3 py-lg-4">
-        <div class="row align-items-center gy-4 gy-lg-0">
-          <div class="col-lg-7 py-lg-2">
-            <p class="text-uppercase small fw-semibold letter-spacing mb-2 text-accent hero-reveal">
-              Our services
-            </p>
-            <h1 class="display-5 fw-bold text-white mb-2 hero-reveal hero-reveal--delay-1">
-              End-to-end logistics capability
-            </h1>
-            <p class="lead text-white-50 mb-4 hero-reveal hero-reveal--delay-2" style="max-width: 46rem">
-              From air and sea freight to project cargo and ship’s spares, we coordinate the details so you can focus on your business.
-            </p>
-          </div>
-          <div class="col-lg-5 d-none d-lg-block">
-            <div class="hero-card card border-0 shadow-lg tilt-card hero-reveal hero-reveal--delay-2" data-tilt>
-              <div class="card-body p-4">
-                <h2 class="h6 text-brand mb-3">What we handle most</h2>
-                <div class="row g-3">
-                  <div class="col-6">
-                    <img
-                      src="../image/photo-12-services-hero-ship.webp"
-                      class="img-fluid rounded-4 border"
-                      alt="Sea freight operations"
-                      loading="eager"
-                      fetchpriority="high"
-                      decoding="async"
-                      style="aspect-ratio: 1 / 1; object-fit: cover"
-                    />
-                  </div>
-                  <div class="col-6">
-                    <img
-                      src="../image/photo-13-services-hero-trucks.webp"
-                      class="img-fluid rounded-4 border"
-                      alt="Trucking operations"
-                      loading="eager"
-                      decoding="async"
-                      style="aspect-ratio: 1 / 1; object-fit: cover"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <p class="small text-muted mb-0">
-                      Practical coordination across carriers, FTZ handling, and last-mile delivery to keep timelines predictable.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-media__veil" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-brand hero-reveal">
+          ENADD
+          <span>Our services</span>
+        </p>
+        <h1 class="hero-title hero-reveal hero-reveal--delay-1">
+          End-to-end logistics capability
+        </h1>
+        <p class="hero-lead hero-reveal hero-reveal--delay-2">
+          From air and sea freight to project cargo and ship’s spares, we coordinate
+          the details so you can focus on your business.
+        </p>
       </div>
     </header>
 
     <main>
       <section id="browse" class="py-5 section-surface">
-        <div class="container py-lg-4">
-          <div class="text-center mb-4 reveal">
-            <span class="section-label">Filter</span>
-            <h2 class="section-title">Browse by category</h2>
-            <p class="text-muted mx-auto mb-4" style="max-width: 40rem">
-              Use the filters to quickly find what you need. If you’re unsure, send an enquiry and we’ll guide you.
+        <div class="container py-lg-5">
+          <div class="mb-5 reveal">
+            <span class="section-label">Browse</span>
+            <h2 class="section-title mb-2">Service categories</h2>
+            <p class="section-copy mb-4">
+              Filter by category to find what you need. If you’re unsure, send an
+              enquiry and we’ll guide you.
             </p>
             <div
-              class="d-flex flex-wrap justify-content-center gap-2 service-filters"
+              class="d-flex flex-wrap gap-1 service-filters"
               role="group"
               aria-label="Filter service categories"
             >
@@ -155,23 +123,22 @@
           </div>
 
           <div class="row g-4 g-lg-5" id="serviceCardGrid">
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal" data-service="land">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal" data-service="land">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-14-service-land.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Local and regional transport"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Local &amp; regional transport</h3>
+                    <h3>Local &amp; regional transport</h3>
                     <p class="small text-muted mb-0">
                       Local cargo pick-up, Malaysia–Singapore trucking, and coordination for onward delivery.
                     </p>
@@ -180,23 +147,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal reveal-delay-1" data-service="airsea">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal reveal-delay-1" data-service="airsea">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-15-service-airsea.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Air and sea freight"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Air &amp; sea freight</h3>
+                    <h3>Air &amp; sea freight</h3>
                     <p class="small text-muted mb-0">
                       Freight forwarding and negotiation of special spot rates for bulk cargo with airlines and carriers.
                     </p>
@@ -205,23 +171,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal reveal-delay-2" data-service="ftz">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal reveal-delay-2" data-service="ftz">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-16-service-ftz.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="FTZ and customs"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">FTZ &amp; customs</h3>
+                    <h3>FTZ &amp; customs</h3>
                     <p class="small text-muted mb-0">
                       Import clearance from various FTZs in Singapore, delivery to local address, and FTZ warehouse operations.
                     </p>
@@ -230,23 +195,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal" data-service="handling">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal" data-service="handling">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-17-service-handling.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Cargo handling"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Cargo handling &amp; value-add</h3>
+                    <h3>Cargo handling &amp; value-add</h3>
                     <p class="small text-muted mb-0">
                       Fumigation, packing and repacking, inward / outward / transhipment cargo handling.
                     </p>
@@ -255,23 +219,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal reveal-delay-1" data-service="project">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal reveal-delay-1" data-service="project">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-18-service-heavy.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Project and heavy lift cargo"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Project &amp; heavy lift</h3>
+                    <h3>Project &amp; heavy lift</h3>
                     <p class="small text-muted mb-0">
                       Specialised heavy lift, project cargo, and odd-size shipments with careful planning and execution.
                     </p>
@@ -280,23 +243,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal reveal-delay-2" data-service="marine">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal reveal-delay-2" data-service="marine">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-19-service-marine.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Marine and shipping support"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Marine &amp; shipping support</h3>
+                    <h3>Marine &amp; shipping support</h3>
                     <p class="small text-muted mb-0">
                       Ship’s spare in transit and worldwide onboard delivery, shipping agencies support, OPL boat, lighterage, tug &amp; barge supply.
                     </p>
@@ -305,23 +267,22 @@
               </article>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6 service-col reveal" data-service="express">
-              <article class="service-card h-100 p-4 p-lg-5 rounded-4 border bg-white tilt-card" data-tilt>
-                <div class="d-flex flex-column h-100 gap-3">
-                  <div class="service-browse-card__media rounded-4 overflow-hidden">
+            <div class="col-12 col-md-6 service-col reveal" data-service="express">
+              <article class="service-card h-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="service-browse-card__media">
                     <img
                       src="../image/photo-20-service-express.webp"
                       width="880"
                       height="550"
                       class="service-browse-card__img"
-                      alt=""
-                      aria-hidden="true"
+                      alt="Insurance and express services"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
                   <div class="service-browse-card__body">
-                    <h3 class="h6 text-brand mb-2">Insurance &amp; express</h3>
+                    <h3>Insurance &amp; express</h3>
                     <p class="small text-muted mb-0">
                       Marine insurance arrangements and worldwide hand-carry service for time-critical movements.
                     </p>
@@ -335,29 +296,30 @@
 
       <section class="py-5 bg-white">
         <div class="container py-lg-4">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden reveal">
-            <div class="card-body p-4 p-lg-5">
-              <h2 class="h5 text-brand mb-4 text-center">Full service catalogue</h2>
-              <ul class="row list-unstyled small service-list gy-2 gx-lg-4 mb-0">
-                <li class="col-md-6">Local cargo pick-up services</li>
-                <li class="col-md-6">Negotiation of special spot rates from airlines / carriers for bulk cargo</li>
-                <li class="col-md-6">Fumigation</li>
-                <li class="col-md-6">Packing / repacking of cargo</li>
-                <li class="col-md-6">Import clearance from various free trade zones in Singapore and delivery to local address</li>
-                <li class="col-md-6">Free trade zone warehouse operator</li>
-                <li class="col-md-6">Malaysia – Singapore trucking</li>
-                <li class="col-md-6">Heavy lift — project cargo / odd size cargo</li>
-                <li class="col-md-6">Air &amp; sea freight forwarding</li>
-                <li class="col-md-6">Ship’s spare in transit &amp; worldwide onboard delivery</li>
-                <li class="col-md-6">Inward / outward / transhipment cargoes handling</li>
-                <li class="col-md-6">Shipping agencies support</li>
-                <li class="col-md-6">OPL boat / lighterage / tug &amp; barge supply</li>
-                <li class="col-md-6">Marine insurance</li>
-                <li class="col-md-6">Worldwide hand-carry service</li>
-              </ul>
-              <div class="d-flex justify-content-center mt-4">
-                <a class="btn btn-accent px-4" href="/enadd/contact/">Ask for a quote</a>
-              </div>
+          <div class="catalogue-panel reveal">
+            <h2 class="section-title text-center mb-2">Full service catalogue</h2>
+            <p class="section-copy text-center mx-auto mb-4">
+              A complete list of services we coordinate for shippers, consignees, and vessel operators.
+            </p>
+            <ul class="row list-unstyled small service-list gy-2 gx-lg-4 mb-0">
+              <li class="col-md-6">Local cargo pick-up services</li>
+              <li class="col-md-6">Negotiation of special spot rates from airlines / carriers for bulk cargo</li>
+              <li class="col-md-6">Fumigation</li>
+              <li class="col-md-6">Packing / repacking of cargo</li>
+              <li class="col-md-6">Import clearance from various free trade zones in Singapore and delivery to local address</li>
+              <li class="col-md-6">Free trade zone warehouse operator</li>
+              <li class="col-md-6">Malaysia – Singapore trucking</li>
+              <li class="col-md-6">Heavy lift — project cargo / odd size cargo</li>
+              <li class="col-md-6">Air &amp; sea freight forwarding</li>
+              <li class="col-md-6">Ship’s spare in transit &amp; worldwide onboard delivery</li>
+              <li class="col-md-6">Inward / outward / transhipment cargoes handling</li>
+              <li class="col-md-6">Shipping agencies support</li>
+              <li class="col-md-6">OPL boat / lighterage / tug &amp; barge supply</li>
+              <li class="col-md-6">Marine insurance</li>
+              <li class="col-md-6">Worldwide hand-carry service</li>
+            </ul>
+            <div class="d-flex justify-content-center mt-5">
+              <a class="btn btn-accent px-4" href="../contact/index.html">Ask for a quote</a>
             </div>
           </div>
         </div>
@@ -374,22 +336,55 @@
       <span aria-hidden="true">↑</span>
     </button>
 
-    <footer class="py-4 border-top bg-white">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-muted"
-      >
-        <p class="mb-0">
-          © <span id="year"></span> ENADD Logistics (S) Pte Ltd. All rights reserved.
-        </p>
-        <div class="d-flex flex-column flex-md-row align-items-center gap-2 gap-md-3 text-md-end">
-          <a
-            href="https://gurusoft.enaddlog.com.sg"
-            class="link-brand"
-            data-enadd-gurusoft
-            target="_blank"
-            rel="noopener noreferrer"
-            >Gurusoft (operations)<span class="visually-hidden"> (opens in new tab)</span></a>
-          <span class="d-none d-md-inline" aria-hidden="true">·</span>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <p class="site-footer__brand">ENADD Logistics</p>
+            <p class="site-footer__tag">
+              Freight forwarding, marine &amp; offshore logistics from Singapore —
+              with dedicated follow-through on every assignment.
+            </p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="site-footer__heading">Explore</p>
+            <ul class="site-footer__links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../services/index.html">Services</a></li>
+              <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="site-footer__heading">Operations</p>
+            <ul class="site-footer__links">
+              <li>
+                <a
+                  href="https://gurusoft.enaddlog.com.sg"
+                  data-enadd-gurusoft
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gurusoft portal</a
+                >
+              </li>
+              <li><a href="../contact/index.html#enquiry">Request a quote</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <p class="site-footer__heading">Singapore</p>
+            <p class="mb-2 small">
+              2 Tuas South Link 1, #06-08<br />
+              Singapore 636904
+            </p>
+            <p class="mb-0 small">
+              <a href="tel:+6561000430">(65) 6100 0430</a> · 24h ops
+            </p>
+          </div>
+        </div>
+        <div
+          class="site-footer__bottom d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span>© <span id="year"></span> ENADD Logistics (S) Pte Ltd. All rights reserved.</span>
           <span>Standard Trading Conditions apply — available on request.</span>
         </div>
       </div>
@@ -404,4 +399,3 @@
     <script src="../js/main.js"></script>
   </body>
 </html>
-

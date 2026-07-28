@@ -39,10 +39,11 @@
     }
   }
 
-  /* —— Make all images feel interactive —— */
+  /* —— Make images feel interactive (skip logo + hero plate) —— */
   document.querySelectorAll("img").forEach(function (img) {
     if (img.classList.contains("brand-logo")) return;
     if (img.hasAttribute("data-no-alive")) return;
+    if (img.closest(".hero-media")) return;
     img.classList.add("img-alive");
   });
 

@@ -5,7 +5,7 @@
 window.ENADD_GURUSOFT_PORTAL_URL = "https://gurusoft.enaddlog.com.sg";
 
 /**
- * GitHub Pages project-site path (no trailing slash). If the site moves to a
- * custom domain at the root, set to "" and change internal page hrefs to /about/, etc.
+ * Optional base path for tooling. Internal page links use relative paths
+ * (./, about/, ../services/, etc.) so local file:// and GitHub Pages both work.
  */
 window.ENADD_SITE_BASE = "/enadd";

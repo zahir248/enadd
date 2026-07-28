@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
@@ -26,10 +26,10 @@
   <body>
     <nav
       id="mainNav"
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm navbar-enadd"
+      class="navbar navbar-expand-lg navbar-light fixed-top navbar-enadd"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center py-1" href="/enadd/" aria-label="ENADD Logistics home">
+        <a class="navbar-brand d-flex align-items-center py-1" href="../index.html" aria-label="ENADD Logistics home">
           <img
             class="brand-logo"
             src="../image/enadd-logo.png"
@@ -52,16 +52,16 @@
         <div class="collapse navbar-collapse" id="navCollapse">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/">Home</a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/about/">About</a>
+              <a class="nav-link" href="../about/index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/enadd/services/">Services</a>
+              <a class="nav-link" href="../services/index.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/enadd/contact/">Contact</a>
+              <a class="nav-link active" aria-current="page" href="../contact/index.html">Contact</a>
             </li>
           </ul>
           <a class="btn btn-accent ms-lg-3 mt-3 mt-lg-0" href="#enquiry">Get a quote</a>
@@ -69,195 +69,173 @@
       </div>
     </nav>
 
-    <header class="hero hero--page position-relative overflow-hidden">
-      <div class="hero-bg hero-parallax" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-orbs" aria-hidden="true">
-        <span class="orb orb-1"></span>
-        <span class="orb orb-2"></span>
-        <span class="orb orb-3"></span>
+    <header class="hero hero--page position-relative">
+      <div class="hero-media hero-parallax" aria-hidden="true">
+        <img
+          src="../image/photo-11-contact-card.webp"
+          alt=""
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          decoding="async"
+        />
       </div>
-      <div class="container position-relative hero-inner py-3 py-lg-4">
-        <div class="row align-items-center gy-4 gy-lg-0">
-          <div class="col-lg-7 py-lg-2">
-            <p class="text-uppercase small fw-semibold letter-spacing mb-2 text-accent hero-reveal">
-              Contact
-            </p>
-            <h1 class="display-5 fw-bold text-white mb-2 hero-reveal hero-reveal--delay-1">
-              Visit or reach our team
-            </h1>
-            <p class="lead text-white-50 mb-4 hero-reveal hero-reveal--delay-2" style="max-width: 46rem">
-              For rates, bookings, and operational support, contact our office. All business transactions are subject
-              to Standard Trading Conditions; copies are available on request.
-            </p>
-          </div>
-          <div class="col-lg-5 d-none d-lg-block">
-            <div class="hero-card card border-0 shadow-lg tilt-card hero-reveal hero-reveal--delay-2" data-tilt>
-              <div class="card-body p-4">
-                <h2 class="h6 text-brand mb-3">Quick contact</h2>
-                <p class="mb-1 small text-muted">
-                  <strong class="text-brand">Operations (24h):</strong>
-                  <a href="tel:+6561000430" class="link-brand">(65) 6100 0430</a>
-                </p>
-                <p class="mb-0 small text-muted">
-                  <strong class="text-brand">Sales:</strong>
-                  <a href="tel:+6561000432" class="link-brand">(65) 6100 0432</a>
-                </p>
-                <div class="mt-3 contact-illustration" aria-hidden="true">
-                  <img
-                    src="../image/photo-11-contact-card.webp"
-                    class="contact-illustration__img"
-                    alt=""
-                    loading="eager"
-                    fetchpriority="high"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-media__veil" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-brand hero-reveal">
+          ENADD
+          <span>Contact</span>
+        </p>
+        <h1 class="hero-title hero-reveal hero-reveal--delay-1">
+          Visit or reach our team
+        </h1>
+        <p class="hero-lead hero-reveal hero-reveal--delay-2">
+          For rates, bookings, and operational support, contact our Singapore office.
+          All business transactions are subject to Standard Trading Conditions.
+        </p>
       </div>
     </header>
 
     <main>
       <section class="py-5 bg-white border-bottom" aria-labelledby="contact-map-heading">
         <div class="container py-lg-2">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="text-center text-lg-start mb-4 reveal">
-                <span class="section-label">Find us</span>
-                <h2 id="contact-map-heading" class="section-title mb-0">Office map</h2>
-                <p class="text-muted mb-0 mt-2">
-                  2 Tuas South Link 1, #06-08, Singapore 636904
-                </p>
-              </div>
-              <div class="map-embed reveal reveal-delay-1 shadow-sm rounded-4 overflow-hidden">
-                <iframe
-                  title="Map showing ENADD office at 2 Tuas South Link 1, Singapore"
-                  src="https://maps.google.com/maps?q=2+Tuas+South+Link+1,+06-08,+Singapore+636904&amp;hl=en&amp;z=16&amp;output=embed"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  allowfullscreen=""
-                ></iframe>
-              </div>
-              <p class="small text-muted mt-3 mb-0 text-center text-lg-start reveal reveal-delay-1">
-                <a
-                  href="https://www.google.com/maps/search/?api=1&amp;query=2+Tuas+South+Link+1,+06-08,+Singapore+636904"
-                  class="link-brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Open in Google Maps<span class="visually-hidden"> (opens in new tab)</span></a>
+          <div class="row justify-content-between align-items-end g-3 mb-4">
+            <div class="col-lg-8 reveal">
+              <span class="section-label">Find us</span>
+              <h2 id="contact-map-heading" class="section-title mb-2">Office map</h2>
+              <p class="section-copy mb-0">
+                2 Tuas South Link 1, #06-08, Singapore 636904
               </p>
             </div>
+            <div class="col-lg-auto reveal reveal-delay-1">
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=2+Tuas+South+Link+1,+06-08,+Singapore+636904"
+                class="link-brand"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open in Google Maps<span class="visually-hidden"> (opens in new tab)</span></a
+              >
+            </div>
+          </div>
+          <div class="map-embed reveal">
+            <iframe
+              title="Map showing ENADD office at 2 Tuas South Link 1, Singapore"
+              src="https://maps.google.com/maps?q=2+Tuas+South+Link+1,+06-08,+Singapore+636904&amp;hl=en&amp;z=16&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""
+            ></iframe>
           </div>
         </div>
       </section>
 
-      <section class="py-5 section-surface">
-        <div class="container py-lg-4">
+      <section class="py-5 section-surface" id="contact">
+        <div class="container py-lg-5">
           <div class="row g-5">
             <div class="col-lg-5 reveal">
               <span class="section-label">Location</span>
-              <h2 class="section-title">Singapore</h2>
-              <div class="contact-block mt-3">
-                <p class="fw-semibold text-accent mb-1">Address</p>
+              <h2 class="section-title">Singapore office</h2>
+              <div class="contact-block mt-2">
                 <p class="mb-4 text-muted">
                   2 Tuas South Link 1, #06-08<br />
                   Singapore 636904
                 </p>
-                <p class="mb-1 text-muted">
-                  <strong class="text-brand">Operations dept contact:</strong>
-                  <a href="tel:+6561000430" class="link-brand">(65) 6100 0430</a>
-                  <span class="text-muted"> – 24 hours</span>
-                </p>
-                <p class="mb-3 text-muted">
-                  <strong class="text-brand">Operations dept email:</strong>
-                  <a href="mailto:ops@enaddlog.com.sg" class="link-brand">ops@enaddlog.com.sg</a>
-                </p>
-                <p class="mb-1 text-muted">
-                  <strong class="text-brand">Finance dept contact:</strong>
-                  <a href="tel:+6561000431" class="link-brand">(65) 6100 0431</a>
-                </p>
-                <p class="mb-3 text-muted">
-                  <strong class="text-brand">Finance dept email:</strong>
-                  <a href="mailto:finance@enaddlog.com.sg" class="link-brand">finance@enaddlog.com.sg</a>
-                </p>
-                <p class="mb-1 text-muted">
-                  <strong class="text-brand">Sales dept contact:</strong>
-                  <a href="tel:+6561000432" class="link-brand">(65) 6100 0432</a>
-                </p>
-                <p class="mb-3 text-muted">
-                  <strong class="text-brand">Sales dept email:</strong>
-                  <a href="mailto:sales@enaddlog.com.sg" class="link-brand">sales@enaddlog.com.sg</a>
-                </p>
-                <p class="fw-semibold text-accent mb-2">Operations portal (Gurusoft)</p>
-                <p class="mb-3 text-muted small">
-                  We use Gurusoft for day-to-day operations. The portal covers bookings, documents, and shipment visibility —
+
+                <div class="contact-dept">
+                  <p class="contact-dept__label">Operations · 24 hours</p>
+                  <p class="mb-1">
+                    <a href="tel:+6561000430" class="link-brand contact-tel-link">(65) 6100 0430</a>
+                  </p>
+                  <p class="mb-0">
+                    <a href="mailto:ops@enaddlog.com.sg" class="link-brand">ops@enaddlog.com.sg</a>
+                  </p>
+                </div>
+                <div class="contact-dept">
+                  <p class="contact-dept__label">Finance</p>
+                  <p class="mb-1">
+                    <a href="tel:+6561000431" class="link-brand contact-tel-link">(65) 6100 0431</a>
+                  </p>
+                  <p class="mb-0">
+                    <a href="mailto:finance@enaddlog.com.sg" class="link-brand">finance@enaddlog.com.sg</a>
+                  </p>
+                </div>
+                <div class="contact-dept">
+                  <p class="contact-dept__label">Sales</p>
+                  <p class="mb-1">
+                    <a href="tel:+6561000432" class="link-brand contact-tel-link">(65) 6100 0432</a>
+                  </p>
+                  <p class="mb-0">
+                    <a href="mailto:sales@enaddlog.com.sg" class="link-brand">sales@enaddlog.com.sg</a>
+                  </p>
+                </div>
+
+                <div class="mt-4">
+                  <p class="contact-dept__label">Operations portal</p>
+                  <p class="mb-2 text-muted small">
+                    Gurusoft covers bookings, documents, and shipment visibility.
+                  </p>
                   <a
                     href="https://gurusoft.enaddlog.com.sg"
-                    class="link-brand"
+                    class="btn btn-outline-secondary btn-sm px-3"
                     data-enadd-gurusoft
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Open Gurusoft<span class="visually-hidden"> (opens in new tab)</span></a>.
-                </p>
-                <p class="mb-0 small text-muted">
+                    >Open Gurusoft<span class="visually-hidden"> (opens in new tab)</span></a
+                  >
+                </div>
+                <p class="mb-0 small text-muted mt-4">
                   UEN / Company Registration No.: 201624849M
                 </p>
               </div>
             </div>
 
             <div class="col-lg-7 reveal reveal-delay-1">
-              <div class="card border-0 shadow-sm rounded-4 overflow-hidden tilt-card" data-tilt>
-                <div class="card-body p-4 p-lg-5">
-                  <h3 class="h5 text-brand mb-4">Send an enquiry</h3>
-                  <div id="enquiry" class="scroll-anchor"></div>
-                  <form
-                    id="contactForm"
-                    class="needs-validation"
-                    novalidate
-                  >
-                    <div class="row g-3">
-                      <div class="col-md-6">
-                        <label for="name" class="form-label"
-                          >Name <span class="required-asterisk" aria-hidden="true">*</span
-                          ><span class="visually-hidden"> (required)</span></label
-                        >
-                        <input type="text" class="form-control" id="name" name="name" required />
-                        <div class="invalid-feedback">Please enter your name.</div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="company" class="form-label">Company</label>
-                        <input type="text" class="form-control" id="company" name="company" />
-                      </div>
-                      <div class="col-md-6">
-                        <label for="email" class="form-label"
-                          >Email <span class="required-asterisk" aria-hidden="true">*</span
-                          ><span class="visually-hidden"> (required)</span></label
-                        >
-                        <input type="email" class="form-control" id="email" name="email" required />
-                        <div class="invalid-feedback">Please enter a valid email.</div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="phone" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" />
-                      </div>
-                      <div class="col-12">
-                        <label for="message" class="form-label"
-                          >Message <span class="required-asterisk" aria-hidden="true">*</span
-                          ><span class="visually-hidden"> (required)</span></label
-                        >
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        <div class="invalid-feedback">Please tell us how we can help.</div>
-                      </div>
-                      <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
-                        <button type="submit" class="btn btn-accent px-4">Submit enquiry</button>
-                        <span id="formStatus" class="small text-muted" role="status" aria-live="polite"></span>
-                      </div>
+              <div class="enquiry-panel">
+                <h3 class="enquiry-panel__title">Send an enquiry</h3>
+                <p class="text-muted small mb-4">
+                  Tell us about your shipment or project and we’ll respond promptly.
+                </p>
+                <div id="enquiry" class="scroll-anchor"></div>
+                <form id="contactForm" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label"
+                        >Name <span class="required-asterisk" aria-hidden="true">*</span
+                        ><span class="visually-hidden"> (required)</span></label
+                      >
+                      <input type="text" class="form-control" id="name" name="name" required />
+                      <div class="invalid-feedback">Please enter your name.</div>
                     </div>
-                  </form>
-                </div>
+                    <div class="col-md-6">
+                      <label for="company" class="form-label">Company</label>
+                      <input type="text" class="form-control" id="company" name="company" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label"
+                        >Email <span class="required-asterisk" aria-hidden="true">*</span
+                        ><span class="visually-hidden"> (required)</span></label
+                      >
+                      <input type="email" class="form-control" id="email" name="email" required />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input type="tel" class="form-control" id="phone" name="phone" />
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label"
+                        >Message <span class="required-asterisk" aria-hidden="true">*</span
+                        ><span class="visually-hidden"> (required)</span></label
+                      >
+                      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                      <div class="invalid-feedback">Please tell us how we can help.</div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
+                      <button type="submit" class="btn btn-accent px-4">Submit enquiry</button>
+                      <span id="formStatus" class="small text-muted" role="status" aria-live="polite"></span>
+                    </div>
+                  </div>
+                </form>
               </div>
               <p class="small text-muted mt-3 mb-0">
                 For urgent requests, call Operations (24 hours):
@@ -279,22 +257,55 @@
       <span aria-hidden="true">↑</span>
     </button>
 
-    <footer class="py-4 border-top bg-white">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-muted"
-      >
-        <p class="mb-0">
-          © <span id="year"></span> ENADD Logistics (S) Pte Ltd. All rights reserved.
-        </p>
-        <div class="d-flex flex-column flex-md-row align-items-center gap-2 gap-md-3 text-md-end">
-          <a
-            href="https://gurusoft.enaddlog.com.sg"
-            class="link-brand"
-            data-enadd-gurusoft
-            target="_blank"
-            rel="noopener noreferrer"
-            >Gurusoft (operations)<span class="visually-hidden"> (opens in new tab)</span></a>
-          <span class="d-none d-md-inline" aria-hidden="true">·</span>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <p class="site-footer__brand">ENADD Logistics</p>
+            <p class="site-footer__tag">
+              Freight forwarding, marine &amp; offshore logistics from Singapore —
+              with dedicated follow-through on every assignment.
+            </p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="site-footer__heading">Explore</p>
+            <ul class="site-footer__links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../services/index.html">Services</a></li>
+              <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <p class="site-footer__heading">Operations</p>
+            <ul class="site-footer__links">
+              <li>
+                <a
+                  href="https://gurusoft.enaddlog.com.sg"
+                  data-enadd-gurusoft
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gurusoft portal</a
+                >
+              </li>
+              <li><a href="../contact/index.html#enquiry">Request a quote</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <p class="site-footer__heading">Singapore</p>
+            <p class="mb-2 small">
+              2 Tuas South Link 1, #06-08<br />
+              Singapore 636904
+            </p>
+            <p class="mb-0 small">
+              <a href="tel:+6561000430">(65) 6100 0430</a> · 24h ops
+            </p>
+          </div>
+        </div>
+        <div
+          class="site-footer__bottom d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span>© <span id="year"></span> ENADD Logistics (S) Pte Ltd. All rights reserved.</span>
           <span>Standard Trading Conditions apply — available on request.</span>
         </div>
       </div>
@@ -333,4 +344,3 @@
     <script src="../js/main.js"></script>
   </body>
 </html>
-
