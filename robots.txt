@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prefer clean folder URLs; legacy redirect stubs should not be indexed
+Disallow: /about.html
+Disallow: /services.html
+Disallow: /contact.html
+
+Sitemap: https://zahir248.github.io/enadd/sitemap.xml
