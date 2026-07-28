@@ -20,6 +20,7 @@
   var formStatus = document.getElementById("formStatus");
   var heroRotate = document.getElementById("heroRotate");
   var toTopBtn = document.getElementById("toTopBtn");
+  var navCollapse = document.getElementById("navCollapse");
 
   var reduceMotion =
     typeof window.matchMedia === "function" &&
@@ -51,6 +52,27 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  function isMobileNavMode() {
+    return typeof window.matchMedia === "function"
+      ? window.matchMedia("(max-width: 991.98px)").matches
+      : window.innerWidth < 992;
+  }
+
+  function closeMobileNav() {
+    if (!navCollapse || !navCollapse.classList.contains("show")) return;
+    if (!isMobileNavMode()) return;
+
+    // Prefer Bootstrap API so aria/state stays in sync.
+    if (typeof bootstrap !== "undefined" && bootstrap.Collapse) {
+      var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse);
+      bsCollapse.hide();
+      return;
+    }
+
+    // Fallback for safety.
+    navCollapse.classList.remove("show");
+  }
+
   function onScroll() {
     if (nav) {
       if (window.scrollY > 24) {
@@ -66,6 +88,9 @@
         toTopBtn.classList.remove("is-visible");
       }
     }
+
+    // On small screens, hide expanded menu while scrolling.
+    closeMobileNav();
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -414,13 +439,12 @@
   // Close mobile nav on any nav click (multi-page)
   document.querySelectorAll(".navbar-collapse .nav-link").forEach(function (link) {
     link.addEventListener("click", function () {
-      var collapse = document.getElementById("navCollapse");
-      if (!collapse || !collapse.classList.contains("show")) return;
-      if (typeof bootstrap === "undefined" || !bootstrap.Collapse) return;
-      var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
-      bsCollapse.hide();
+      closeMobileNav();
     });
   });
+
+  // If user rotates device / resizes while menu is open, close it cleanly.
+  window.addEventListener("resize", closeMobileNav, { passive: true });
 
   var gurusoftUrl =
     typeof window !== "undefined" && window.ENADD_GURUSOFT_PORTAL_URL
