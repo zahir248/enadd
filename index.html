@@ -72,6 +72,22 @@
               "addressCountry": "SG"
             },
             "areaServed": ["SG", "MY"],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "telephone": "+65-6100-0430",
+                "email": "ops@enaddlog.com.sg",
+                "availableLanguage": ["en"]
+              },
+              {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "telephone": "+65-6100-0432",
+                "email": "sales@enaddlog.com.sg",
+                "availableLanguage": ["en"]
+              }
+            ],
             "sameAs": ["https://gurusoft.enaddlog.com.sg"],
             "knowsAbout": [
               "freight forwarding",
@@ -129,6 +145,11 @@
             "description": "Official website of ENADD Logistics (S) Pte Ltd — Singapore freight forwarding, marine and offshore logistics.",
             "publisher": {
               "@id": "https://enadd.com.sg/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://enadd.com.sg/services/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
             },
             "inLanguage": "en-SG"
           },
