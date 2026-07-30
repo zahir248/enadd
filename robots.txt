@@ -6,4 +6,4 @@ Disallow: /about.html
 Disallow: /services.html
 Disallow: /contact.html
 
-Sitemap: https://zahir248.github.io/enadd/sitemap.xml
+Sitemap: https://enadd.com.sg/sitemap.xml

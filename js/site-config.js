@@ -7,13 +7,12 @@ window.ENADD_GURUSOFT_PORTAL_URL = "https://gurusoft.enaddlog.com.sg";
 /**
  * Public site origin (no trailing slash). Used for SEO tooling notes.
  * Canonical / Open Graph URLs in HTML should match this host + path.
- * GitHub Pages project site: https://zahir248.github.io/enadd
- * If you add a custom domain, update this and the HTML canonical/og:url tags.
+ * Custom domain: https://enadd.com.sg (GitHub Pages)
  */
-window.ENADD_SITE_ORIGIN = "https://zahir248.github.io/enadd";
+window.ENADD_SITE_ORIGIN = "https://enadd.com.sg";
 
 /**
- * Optional base path for tooling. Internal page links use relative paths
- * (index.html, about/index.html, etc.) so local file:// and GitHub Pages both work.
+ * Optional base path for tooling. Empty on custom domain (site at domain root).
+ * Internal page links use relative paths so local file:// and Pages both work.
  */
-window.ENADD_SITE_BASE = "/enadd";
+window.ENADD_SITE_BASE = "";
