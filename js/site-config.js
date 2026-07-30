@@ -2,7 +2,7 @@
  * Gurusoft — used for day-to-day operations. Update the portal URL here;
  * main.js applies it to all anchors with data-enadd-gurusoft.
  */
-window.ENADD_GURUSOFT_PORTAL_URL = "https://gurusoft.enaddlog.com.sg";
+window.ENADD_GURUSOFT_PORTAL_URL = "https://gsgate.gurusofttech.com/cloud51/PRDG11EOSV03WD/WMS/";
 
 /**
  * Public site origin (no trailing slash). Used for SEO tooling notes.
