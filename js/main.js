@@ -26,20 +26,6 @@
     typeof window.matchMedia === "function" &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // EmailJS configuration (GitHub Pages friendly)
-  // Replace these with your EmailJS values:
-  var EMAILJS_PUBLIC_KEY = "_KWQTjocabj0U71Mj";
-  var EMAILJS_SERVICE_ID = "service_vwrwsa4";
-  var EMAILJS_TEMPLATE_ID = "template_izobm9z";
-
-  if (typeof emailjs !== "undefined" && EMAILJS_PUBLIC_KEY !== "YOUR_EMAILJS_PUBLIC_KEY") {
-    try {
-      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    } catch (err) {
-      // Ignore init issues; submit handler will surface errors.
-    }
-  }
-
   /* —— Make images feel interactive (skip logo + hero plate) —— */
   document.querySelectorAll("img").forEach(function (img) {
     if (img.classList.contains("brand-logo")) return;
@@ -366,8 +352,10 @@
     });
   });
 
-  /* —— Contact form —— */
+  /* —— Contact form (opens default email app via mailto) —— */
   if (form && formStatus) {
+    var ENQUIRY_EMAIL = "ops@enaddlog.com.sg";
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -379,46 +367,46 @@
       }
 
       form.classList.add("was-validated");
-      formStatus.textContent = "Sending…";
-      formStatus.classList.remove("text-muted", "text-success", "text-danger");
-      formStatus.classList.add("text-muted");
 
-      var submitBtn = form.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.setAttribute("aria-disabled", "true");
-      }
+      var name = ((form.elements.namedItem("name") || {}).value || "").trim();
+      var company = ((form.elements.namedItem("company") || {}).value || "").trim();
+      var email = ((form.elements.namedItem("email") || {}).value || "").trim();
+      var phone = ((form.elements.namedItem("phone") || {}).value || "").trim();
+      var message = ((form.elements.namedItem("message") || {}).value || "").trim();
 
-      if (
-        typeof emailjs === "undefined" ||
-        EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY" ||
-        EMAILJS_SERVICE_ID === "YOUR_EMAILJS_SERVICE_ID" ||
-        EMAILJS_TEMPLATE_ID === "YOUR_EMAILJS_TEMPLATE_ID"
-      ) {
-        formStatus.textContent =
-          "Email is not configured yet. Please set EmailJS keys in js/main.js.";
-        formStatus.classList.remove("text-muted");
-        formStatus.classList.add("text-danger");
-        if (submitBtn) submitBtn.disabled = false;
-        return;
-      }
+      var subject = company
+        ? "Enquiry from " + name + " (" + company + ")"
+        : "Enquiry from " + name;
 
-      emailjs
-        .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
-        .then(function () {
-          formStatus.textContent = "";
-          formStatus.classList.remove("text-muted", "text-danger", "text-success");
-          showFormToast("Sent. Thank you — we’ll get back to you shortly.", "success");
-          form.reset();
-          form.classList.remove("was-validated");
-          if (submitBtn) submitBtn.disabled = false;
-        })
-        .catch(function () {
-          formStatus.textContent = "";
-          formStatus.classList.remove("text-muted", "text-danger", "text-success");
-          showFormToast("Sorry, message failed to send. Please call (65) 6100 0430.", "error");
-          if (submitBtn) submitBtn.disabled = false;
-        });
+      var bodyLines = [
+        "Dear ENADD Team,",
+        "",
+        "I am writing to enquire about your logistics services.",
+        "",
+        message,
+        "",
+        "Please feel free to contact me at your earliest convenience.",
+        "",
+        "Kind regards,",
+        name,
+      ];
+
+      if (company) bodyLines.push(company);
+      bodyLines.push(email);
+      if (phone) bodyLines.push(phone);
+
+      var mailto =
+        "mailto:" +
+        ENQUIRY_EMAIL +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(bodyLines.join("\n"));
+
+      formStatus.textContent = "";
+      formStatus.classList.remove("text-muted", "text-danger", "text-success");
+      showFormToast("Opening your email app…", "info");
+      window.location.href = mailto;
     });
   }
 
